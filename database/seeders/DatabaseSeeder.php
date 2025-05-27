@@ -1,6 +1,10 @@
 <?php
 
 namespace Database\Seeders;
+use App\Models\User;
+use App\Models\Client;
+use App\Models\Project;
+use App\Models\TimeLog;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -12,11 +16,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        User::factory()
+        ->count(3)
+        ->has(
+            Client::factory()
+                ->count(2)
+                ->has(
+                    Project::factory()
+                        ->count(2)
+                        ->has(TimeLog::factory()->count(4))
+                )
+        )
+        ->create();
     }
 }
