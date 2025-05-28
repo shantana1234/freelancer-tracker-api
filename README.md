@@ -99,9 +99,11 @@ GET /api/time-logs/grouped?from=...&to=...&group_by=day/week
 GET /api/export/pdf (auth required)
 
 
-## ⚙️ API Endpoint and Details 
+## ⚙️ API Endpoint and Details [Postman collection] 
 
-           Endpoint details with JSON demo data can be found at this link - 
+    https://shantana-4364985.postman.co/workspace/Shantana's-Workspace~7d487738-7a1e-4e58-82ac-feec9d7c0bcc/collection/45205524-e77a0135-e296-49ee-bcc9-f7761a84998b?action=share&creator=45205524 
+
+postman collection JSON file is also included in the file. 
 
 
 ## 📁 Folder Highlights
