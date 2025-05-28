@@ -31,7 +31,7 @@ Freelancer Tracker API is a Laravel-based application designed to help freelance
 
 1. Clone the Repository
 
-git clone 
+git clone git@github.com:shantana1234/freelancer-tracker-api.git <br>
 cd freelancer-tracker
 
 2. Install Dependencies
