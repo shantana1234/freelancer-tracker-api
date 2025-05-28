@@ -31,7 +31,7 @@ Freelancer Tracker API is a Laravel-based application designed to help freelance
 
 1. Clone the Repository
 
-git clone git@github.com:shantana1234/freelancer-tracker-api.git <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git clone git@github.com:shantana1234/freelancer-tracker-api.git <br>
 cd freelancer-tracker
 
 2. Install Dependencies
@@ -62,19 +62,20 @@ php artisan key:generate
 &nbsp;&nbsp;&nbsp;MAIL_ENCRYPTION=null<br>
 &nbsp;&nbsp;&nbsp;MAIL_FROM_ADDRESS="noreply@freelancetracker.com"<br>
 &nbsp;&nbsp;&nbsp;MAIL_FROM_NAME="Freelancer Tracker"<br>
+<br><br>
 
-6. Set Up the Database
-Create the MySQL database named freelancer_tracker and run migrations:
+6. Set Up the Database<br>
+Create the MySQL database named freelancer_tracker and run migrations:<br>
 
 php artisan migrate<br>
 
 seed test data:<br>
 php artisan db:seed<br>
 
-7. Serve the Application
+7. Serve the Application <br>
 php artisan serve
 
-By default, the app runs on: http://127.0.0.1:8000
+By default, the app runs on: http://127.0.0.1:8000<br>
 
 📬 Testing Emails
 
