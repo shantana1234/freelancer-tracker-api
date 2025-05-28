@@ -46,28 +46,30 @@ php artisan key:generate
 
 5. Update your .env with:
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=freelancer_tracker
-DB_USERNAME=root
-DB_PASSWORD=your_password
+&nbsp;&nbsp;&nbsp;DB_CONNECTION=mysql<br>
+&nbsp;&nbsp;&nbsp;DB_HOST=127.0.0.1<br>
+&nbsp;&nbsp;&nbsp;DB_PORT=3306<br>
+&nbsp;&nbsp;&nbsp;DB_DATABASE=freelancer_tracker<br>
+&nbsp;&nbsp;&nbsp;DB_USERNAME=root<br>
+&nbsp;&nbsp;&nbsp;DB_PASSWORD=your_password<br>
 
-MAIL_MAILER=smtp
-MAIL_HOST=sandbox.smtp.mailtrap.io
-MAIL_PORT=2525
-MAIL_USERNAME=your_mailtrap_username
-MAIL_PASSWORD=your_mailtrap_password
-MAIL_ENCRYPTION=null
-MAIL_FROM_ADDRESS="noreply@freelancetracker.com"
-MAIL_FROM_NAME="Freelancer Tracker"
+<br>
+&nbsp;&nbsp;&nbsp;MAIL_MAILER=smtp<br>
+&nbsp;&nbsp;&nbsp;MAIL_HOST=sandbox.smtp.mailtrap.io<br>
+&nbsp;&nbsp;&nbsp;MAIL_PORT=2525<br>
+&nbsp;&nbsp;&nbsp;MAIL_USERNAME=your_mailtrap_username<br>
+&nbsp;&nbsp;&nbsp;MAIL_PASSWORD=your_mailtrap_password<br>
+&nbsp;&nbsp;&nbsp;MAIL_ENCRYPTION=null<br>
+&nbsp;&nbsp;&nbsp;MAIL_FROM_ADDRESS="noreply@freelancetracker.com"<br>
+&nbsp;&nbsp;&nbsp;MAIL_FROM_NAME="Freelancer Tracker"<br>
 
 6. Set Up the Database
 Create the MySQL database named freelancer_tracker and run migrations:
 
-php artisan migrate
-seed test data:
-php artisan db:seed
+php artisan migrate<br>
+
+seed test data:<br>
+php artisan db:seed<br>
 
 7. Serve the Application
 php artisan serve
@@ -80,23 +82,15 @@ Sign up at https://mailtrap.io and use your credentials in .env. Emails (notific
 
 ## ⚙️ API Routes
 
-POST /api/register
-
-POST /api/login
-
-POST /api/logout (auth required)
-
-GET /api/profile (auth required)
-
-apiResource /clients (auth required)
-
-apiResource /projects (auth required)
-
-apiResource /time-logs (auth required)
-
-GET /api/time-logs/grouped?from=...&to=...&group_by=day/week
-
-GET /api/export/pdf (auth required)
+POST /api/register <br>
+POST /api/login<br>
+POST /api/logout (auth required)<br>
+GET /api/profile (auth required)<br>
+apiResource /clients (auth required)<br>
+apiResource /projects (auth required)<br>
+apiResource /time-logs (auth required)<br>
+GET /api/time-logs/grouped?from=...&to=...&group_by=day/week<br>
+GET /api/export/pdf (auth required)<br>
 
 
 ## ⚙️ API Endpoint and Details [Postman collection] 
@@ -108,21 +102,21 @@ postman collection JSON file is also included in the file.
 
 ## 📁 Folder Highlights
 
-app/Http/Controllers – Controllers for Users, Clients, Projects, TimeLogs
+app/Http/Controllers – Controllers for Users, Clients, Projects, TimeLogs<br>
 
-app/Http/Resources – API resource transformers
+app/Http/Resources – API resource transformers<br>
 
-app/Models – Eloquent Models
+app/Models – Eloquent Models<br>
 
-app/Notifications – Email notifications
+app/Notifications – Email notifications<br>
 
-resources/views/pdf – Blade view used for PDF generation
+resources/views/pdf – Blade view used for PDF generation<br>
 
 ##  ✅ Tips
 
-Use Postman to test API endpoints.
+Use Postman to test API endpoints.<br>
 
-Protect routes using auth:sanctum middleware.
+Protect routes using auth:sanctum middleware.<br>
 
-Keep .env secure – never commit it to Git.
+Keep .env secure – never commit it to Git.<br>
 
